@@ -44,7 +44,7 @@ namespace WpfExplorer.Support.UI.Units
     ///     <MyNamespace:MaximizeButton/>
     ///
     /// </summary>
-    public class MaximizeButton : Control
+    public class MaximizeButton : Button
     {
         static MaximizeButton()
         {
