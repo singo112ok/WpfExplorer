@@ -44,7 +44,7 @@ namespace WpfExplorer.Support.UI.Units
     ///     <MyNamespace:MinimizeButton/>
     ///
     /// </summary>
-    public class MinimizeButton : Control
+    public class MinimizeButton : Button
     {
         static MinimizeButton()
         {
