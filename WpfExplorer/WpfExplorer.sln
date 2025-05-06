@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfExplorer", "WpfExplorer.csproj", "{32AE538D-4123-49FC-9E14-3367B3B32100}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfExplorer.Support", "..\WpfExplorer.Support\WpfExplorer.Support.csproj", "{FA6FE764-44DD-41C2-81B9-2A687C13659C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfExplorer.Support", "..\WpfExplorer.Support\WpfExplorer.Support.csproj", "{FA6FE764-44DD-41C2-81B9-2A687C13659C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfExplorer.Forms", "..\WpfExplorer.Forms\WpfExplorer.Forms.csproj", "{A7DA749D-38AF-48B1-A6C9-56C9712218C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{FA6FE764-44DD-41C2-81B9-2A687C13659C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA6FE764-44DD-41C2-81B9-2A687C13659C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA6FE764-44DD-41C2-81B9-2A687C13659C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7DA749D-38AF-48B1-A6C9-56C9712218C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7DA749D-38AF-48B1-A6C9-56C9712218C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7DA749D-38AF-48B1-A6C9-56C9712218C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7DA749D-38AF-48B1-A6C9-56C9712218C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
