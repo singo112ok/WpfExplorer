@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WpfExplorer.Support.UI.Units;
 
-namespace WpfExplorer.Support.UI.Views
+namespace WpfExplorer.Forms.UI.Views
 {
     /// <summary>
     /// Follow steps 1a or 1b and then 2 to use this custom control in a XAML file.
