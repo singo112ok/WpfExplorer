@@ -8,7 +8,12 @@
             BasedOn="{StaticResource {x:Type based:DarkWindow}}">
             <Setter Property="Content">
                 <Setter.Value>
-                    <units:FolderTreeView/>
+                    <units:FolderTreeView>
+                    <TreeViewItem>Lucas</TreeViewItem>
+                    <TreeViewItem>Kevin</TreeViewItem>
+                    <TreeViewItem>Joolo</TreeViewItem>
+                </units:FolderTreeView>
+
             </Setter.Value>
             </Setter>
         </Style>
