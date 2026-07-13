@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Jamesnet.Wpf.Global.Location;
+﻿using Jamesnet.Wpf.Global.Location;
+using Prism.Regions;
 using WpfExplorer.Forms.Local.ViewModels;
 using WpfExplorer.Forms.UI.Views;
+using WpfExplorer.Main.Local.ViewModels;
+using WpfExplorer.Main.UI.Views;
 
 
 namespace WpfExplorer.Properties
@@ -14,7 +12,8 @@ namespace WpfExplorer.Properties
     {
         protected override void Match(ViewModelLocatorCollection items)
         {
-            items.Register<ExplorerWindow, ExplorerViewModel>();
+            items.Register<MainContent, MainContentViewModel>();
+            items.Register<ExplorerWindow, ExplorerViewModel>();            
         }
     }
 }
