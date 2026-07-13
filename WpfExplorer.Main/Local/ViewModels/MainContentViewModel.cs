@@ -9,21 +9,26 @@ using WpfExplorer.Support.Local.Models;
 
 namespace WpfExplorer.Main.Local.ViewModels
 {
-    public class MainContentViewModel
+    public partial class MainContentViewModel : ObservableBase
     {
-        public ICommand FolderChangedCommand { get; init; }
+        //public ICommand FolderChangedCommand { get; init; }
+        private readonly FileService _fileService;
 
         public List<FolderInfo> Roots { get; init; }
 
-        public MainContentViewModel(FileService _fileServie)
+        public MainContentViewModel(FileService fileServie)
         {
-            FolderChangedCommand = new RelayCommand<FolderInfo>(FolderChanged);
-            Roots = _fileServie.GenerateRootNodes();
+            //FolderChangedCommand = new RelayCommand<FolderInfo>(FolderChanged);
+            _fileService = fileServie;
+            
+            Roots = _fileService.GenerateRootNodes();
         }
 
+        [RelayCommand]
         private void FolderChanged(FolderInfo folderInfo)
         {
-            MessageBox.Show($"Selected : {folderInfo.Name}");
+            //MessageBox.Show($"Selected : {folderInfo.Name}");
+            _fileService.RefreshSubdirectories(folderInfo);
         }
     }
 }
