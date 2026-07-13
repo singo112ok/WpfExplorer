@@ -2,17 +2,18 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:views="clr-namespace:WpfExplorer.Main.UI.Views"
                     xmlns:units="clr-namespace:WpfExplorer.Main.UI.Units">
-        <Style TargetType="{x:Type views:MainContent}">
+    <Style TargetType="{x:Type views:MainContent}">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type views:MainContent}">
                     <Border Background="{TemplateBinding Background}"
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}">
-                        <units:FolderTreeView  ItemsSource="{Binding Roots}"/>
+                        <units:FolderTreeView  ItemsSource="{Binding Roots}"
+                                               SelectionCommand="{Binding FolderChangedCommand}"/>
                     </Border>
                 </ControlTemplate>
-            </Setter.Value>            
+            </Setter.Value>
         </Setter>
-    </Style>    
+    </Style>
 </ResourceDictionary>
